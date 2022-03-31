@@ -6,6 +6,44 @@ p{
         width: 30%;
         margin: 20px 10px 10px 10px;
     }
+    .col-md-6{
+        margin-top:12px !important;
+    }
+}
+//navbar
+.desktop{
+    display:block;
+}
+.mobile{
+    display:none;
+}
+@media only screen and (max-width: 786px) {
+    .desktop{
+        display:none;
+    }
+    .mobile{
+        display:block;
+    }
+}
+.mobile{
+    .nav-item{
+        width: 60% !important;
+    }
+    .col-md-12{
+        display: flex !important;
+    }
+    button{
+        float: right;
+    }
+}
+.navbar-toggler{
+    border-color: white !important;
+}
+#navbarSupportedContent{
+    margin-top:2rem !important;
+}
+.link-anchor{
+    text-decoration: none;
 }
 .nav-link{
     margin:0.6rem;
@@ -19,6 +57,7 @@ p{
     padding: 0.5rem 1.5rem 0.5rem 1.5rem !important;
     border: none;
     border-radius: 0px;
+    border-color:#69b868 !important;
 }
 .banner-image{
     width: 100%;
@@ -100,14 +139,23 @@ p{
     //margin:0px !important;
     border-color:white !important;
 }
+.nav-link{
+    margin: 0px !important;
+}
 .tabs{
     border: 1px solid #ddd;
+    margin-bottom: 1rem;
 }
 #home-tab{
     color:black;
 }
 #profile-tab{
     color:#8b8b8b;
+    background: #f1efef !important;
+    border: none !important;
+}
+.nav-tabs .nav-link:focus, .nav-tabs .nav-link:hover{
+    border: none !important;
 }
 @media only screen and (max-width: 700px) {
     .footer-img{
@@ -162,7 +210,12 @@ p{
     text-transform:uppercase;
     .text-left{
         border: 1px solid white;
-        padding: 0.4rem;
+        padding: 1rem;
+    }
+    @media only screen and (max-width: 700px){
+        .text-center{
+            margin-top: 2rem;
+        }
     }
 }
 .section-6{
@@ -195,15 +248,13 @@ p{
         color: #7a7979;
         padding: 1rem;
     }
-
-    @media only screen and (min-width: 700px) {
-        .download-icon{
-            margin-left: 22% !important;
-        }
+    .download-icon{
+        padding-left: 33%;
     }
-    @media only screen and (min-width: 992px) {
+    @media only screen and (max-width: 700px) {
         .download-icon{
-            margin-left: 33% !important;
+            padding-left: 2% !important;
+            width: 98% !important;
         }
     }
 }
@@ -265,4 +316,17 @@ p{
         border-bottom: 1px solid #ddd;
         border-left: 1px solid #ddd;
     }
+}
+.social{
+    margin-bottom: 1rem;
+}
+.social-img{
+    width: 6%;
+    padding: 1rem;
+}
+@media only screen and (max-width: 700px) {
+    .social-img{
+        width: 15%;
+        padding: 0.4rem;
+    }   
 }

@@ -16,11 +16,11 @@
   <!-- navbar start here-->  
   <nav class="navbar navbar-expand-lg navbar-light">
     <div class="container">
+      <img class="logo" src="images/logo.png">
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <img class="logo" src="images/logo.png">
         <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
           <li class="nav-item">
             <a class="nav-link" aria-current="page" href="#">Home</a>
@@ -37,12 +37,26 @@
           <li class="nav-item">
             <a class="nav-link" aria-current="page" href="#">Contact us</a>
           </li>
-          <li class="nav-item">
+          <li class="nav-item desktop">
             <a class="nav-link text-theme" href="#">Login</a>
           </li>
-          <li class="nav-item">
+          <li class="nav-item desktop">
             <button class="nav-link btn btn-theme" >Sign up</button>
           </li>
+
+          <div class="mobile">
+            <div class="row">
+              <div class="col-md-12">
+                <div class="nav-item">
+                  <a class="nav-link text-theme" href="#">Login</a>
+                </div>
+                <div class="nav-item">
+                  <button class="nav-link btn btn-theme" >Sign up</button>
+                </div>
+              </div>
+          </div>
+        </div>
+
         </ul>
       </div>
     </div>
@@ -98,7 +112,7 @@
         </div>
         <div class="col-md-6">
           <div class="iframecontainer">
-            <img width="100%" src="images/youtube.jpg">
+            <iframe width="100%" height="100%" src="https://www.youtube.com/embed/tgbNymZ7vqY"></iframe>
           </div>
         </div>
       </div>
@@ -117,7 +131,7 @@
               <div class="content-sec-3">
                 <p>Jesus is very centre of christan faith. Peopel were first callled Christ-lans because
                 they were living their lives trying to follow the teaching of Jesus Christ</p>
-                <span class="link">More detail</span>&nbsp;<i class="fa fa-arrow-right" aria-hidden="true"></i>
+                <a class="link-anchor" href="#"><span class="link">More detail</span>&nbsp;<i class="fa fa-arrow-right" aria-hidden="true"></i></a>
                </div> 
             </div>
           </div>
@@ -131,7 +145,7 @@
                 <p>DId you know that Bible is the world's ultimate number one best seller. There have been more copies
                   produced and bought than any other book in history
                 </p>
-                <span class="link">More detail</span>&nbsp;<i class="fa fa-arrow-right" aria-hidden="true"></i>
+                <a class="link-anchor" href="#"><span class="link">More detail</span>&nbsp;<i class="fa fa-arrow-right" aria-hidden="true"></i></a>
                </div> 
             </div>
           </div>
@@ -155,7 +169,7 @@
                 Bible teaches about the world.about you and why Jesus cam to help you.
               </p>
             </div>
-            <span class="link">More detail</span>&nbsp;<i class="fa fa-arrow-right" aria-hidden="true"></i>
+            <a class="link-anchor" href="#"><span class="link">More detail</span>&nbsp;<i class="fa fa-arrow-right" aria-hidden="true"></i></a>
           </div>
           </div>
         </div>
@@ -170,7 +184,7 @@
                   Bible teaches about the world.about you and why Jesus cam to help you.
                 </p>
               </div>
-              <span class="link">More detail</span>&nbsp;<i class="fa fa-arrow-right"></i>
+              <a class="link-anchor" href="#"><span class="link">More detail</span>&nbsp;<i class="fa fa-arrow-right"></i></a>
             </div>
           </div>
         </div>
@@ -263,9 +277,13 @@
    <div class="section-9">
      <div class="container">
      <div class="row">
-       <div class="col-md-12">
-        <!--social media-->
+       <!-- <div class="col-md-12">
         <img class="footer-img" src="images/social.webp" width="15%">
+       </div> -->
+       <div class="col-md-12 social">
+         <span><a href="#" title="facebook"><img class="social-img" src="images/social/fb.webp"></a></span>
+         <span><a href="#" title="instagram"><img class="social-img" src="images/social/insta.webp"></a></span>
+         <span><a href="#" title="twitter"><img class="social-img" src="images/social/twitter.webp"></a></span>
        </div>
        <div class="col-md-12">
         <p>©MeetJ</p>
